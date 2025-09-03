@@ -13,7 +13,7 @@ router.post("/send", async (req, res) => {
 
 
     if (!user) {
-      return res.status(400).json({ message: 'User not found' });
+      return res.status(400).json({ message: 'user not found' });
     }
     
 

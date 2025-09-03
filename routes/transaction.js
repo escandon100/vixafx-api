@@ -35,15 +35,15 @@ router.post("/transaction", async (req, res) => {
       } 
 
     // Update based on transaction type
-    if (type === "deposit") {
+    if (type === "Deposit") {
       finance.deposited += Number(amount);
       finance.balance += Number(amount);
-    } else if (type === "withdrawal") {
+    } else if (type === "Withdrawal") {
       finance.balance -= Number(amount);
-    } else if (type === "profit") {
+    } else if (type === "Profit") {
       finance.profit += Number(amount);
       finance.balance += Number(amount);
-    } else if (type === "bonus") {
+    } else if (type === "Bonus") {
       finance.bonus += Number(amount);
       finance.balance += Number(amount);
     }
