@@ -11,7 +11,7 @@ const router = express.Router()
 
 router.post("/send" , async (req , res ) => {
 
-    const {firstName , email , subject , message } = req.body
+    const {email , subject , message } = req.body
 
     try{
         const transporter = nodemailer.createTransport({

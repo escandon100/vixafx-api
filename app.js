@@ -29,6 +29,7 @@ mongoose.connect(MONGO_URI)
 
 
 app.use(cors({ origin : "https://www.vixafx.com" , credentials : true}));
+
 app.use(express.json());
 
 app.use('/api/adminLogin', adminLoginRoutes);
